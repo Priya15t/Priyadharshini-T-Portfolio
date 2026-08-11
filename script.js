@@ -1,3 +1,12 @@
+// Active Link Highlighting
+const currentPage = window.location.pathname.split("/").pop();
+document.querySelectorAll('.nav-links a').forEach(link => {
+    const linkPath = link.getAttribute('href');
+    if(linkPath === currentPage || (currentPage === '' && linkPath === 'index.html')) {
+        link.classList.add('active');
+    }
+});
+
 // Theme Toggle Logic
 const themeToggleBtn = document.getElementById('theme-toggle');
 const htmlElement = document.documentElement;

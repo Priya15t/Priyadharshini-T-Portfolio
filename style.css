@@ -49,6 +49,14 @@ body {
     line-height: 1.6;
     transition: var(--transition);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-top: var(--nav-height);
 }
 
 ul {
@@ -195,8 +203,13 @@ a {
     transition: var(--transition);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
     width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--accent-color);
 }
 
 .nav-controls {
@@ -226,10 +239,9 @@ a {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--nav-height));
     display: flex;
     align-items: center;
-    padding-top: var(--nav-height);
 }
 
 .hero-content {
