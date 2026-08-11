@@ -245,7 +245,33 @@ a {
 }
 
 .hero-content {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.hero-text-wrapper {
+    flex: 1;
+}
+
+.hero-image-wrapper {
+    flex-shrink: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 10px;
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .greeting {
@@ -354,7 +380,34 @@ a {
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+}
+
+.project-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-info h3 {
@@ -535,6 +588,17 @@ a {
 
     .hamburger {
         display: block;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .hero-image-wrapper {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 2rem;
     }
 
     .hero-buttons {
