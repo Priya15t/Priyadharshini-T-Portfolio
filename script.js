@@ -86,3 +86,36 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.fade-in').forEach(element => {
     observer.observe(element);
 });
+
+// Lightbox for Drawings Gallery
+const drawingImages = document.querySelectorAll('.drawing-image');
+if (drawingImages.length > 0) {
+    // Create the lightbox overlay dynamically
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    
+    const lightboxImg = document.createElement('img');
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'lightbox-close';
+    closeBtn.innerHTML = '&times;'; // 'X' character
+    
+    lightbox.appendChild(lightboxImg);
+    lightbox.appendChild(closeBtn);
+    document.body.appendChild(lightbox);
+    
+    // Make images clickable
+    drawingImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+        });
+    });
+    
+    // Close lightbox when clicking anywhere outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.classList.remove('active');
+        }
+    });
+}
