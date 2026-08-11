@@ -8,6 +8,9 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     htmlElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
+} else {
+    // If no saved theme, use the default from HTML
+    updateThemeIcon(htmlElement.getAttribute('data-theme'));
 }
 
 themeToggleBtn.addEventListener('click', () => {
