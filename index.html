@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Priyadharshini T, Data Analyst and Software Trainee.">
+    <title>Priyadharshini T | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">PT<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero">
+            <div class="container hero-content fade-in">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Priyadharshini T</h1>
+                <h2 class="title">Data Analyst & Software Trainee</h2>
+                <p class="summary">
+                    Multi-disciplinary expert in Python, SQL, PySpark, and Excel. 
+                    I have a passion for turning complex data into actionable insights 
+                    and solving real-world problems through data analysis and software development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#" class="btn btn-secondary" onclick="alert('Resume download functionality to be added.')">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-card glass-card fade-in">
+                    <div class="about-text">
+                        <p>
+                            I hold a <strong>B.Sc. in Artificial Intelligence and Machine Learning (AIML)</strong> 
+                            from Sri Krishna Arts and Science College, graduating with a <strong>CGPA of 8.0</strong>.
+                        </p>
+                        <p>
+                            With a strong hands-on foundation in networking concepts and modern software architecture, 
+                            my focus is on bridging the gap between data and software. I thrive on turning complex, 
+                            messy data into actionable insights and developing applications that solve real-world problems efficiently.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <!-- The YellowNetwork -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role">Software Trainee</h3>
+                            <h4 class="company">The YellowNetwork</h4>
+                            <p class="desc">
+                                Contributed to enterprise software development, focusing on application maintenance, 
+                                deployment strategies, systematic debugging, version control (Git/GitHub), and workflow automation.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Litz Tech India -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role">Data Analyst & Developer Intern</h3>
+                            <h4 class="company">Litz Tech India Private Limited</h4>
+                            <p class="desc">
+                                Focused on comprehensive data cleaning, exploratory data analysis, and visual storytelling 
+                                leveraging Python and its powerful data libraries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects Showcase</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-info">
+                            <h3>Personal Portfolio & Data Analytics Hub</h3>
+                            <p class="date">2026</p>
+                            <p class="desc">
+                                A fully responsive professional portfolio showcasing both software engineering projects and data analytics case studies. (You're looking at it!)
+                            </p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Vanilla JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-info">
+                            <h3>AI Safeguard</h3>
+                            <p class="date">2026</p>
+                            <p class="desc">
+                                An AI-powered emergency safety application featuring AI voice-triggered alerts and real-time location sharing to trusted contacts.
+                            </p>
+                            <div class="tech-stack">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                                <span>Google Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-info">
+                            <h3>Data Cleaning & Visualization Suite</h3>
+                            <p class="desc">
+                                Comprehensive data wrangling, exploratory data analysis, and visual storytelling on real-world datasets including FIFAnalyzer and Kaggle challenges.
+                            </p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                                <span>Seaborn</span>
+                                <span>PySpark</span>
+                                <span>Excel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card fade-in">
+                        <div class="project-info">
+                            <h3>2048 Puzzle Game & More</h3>
+                            <p class="desc">
+                                Recreated the classic puzzle game logic and implemented interactive event-driven architecture, alongside multiple additional projects hosted on my GitHub.
+                            </p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Pygame</span>
+                            </div>
+                            <div class="project-links mt-3">
+                                <a href="https://github.com/Priya15t" target="_blank" class="github-link"><i class="fab fa-github"></i> View More on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Certifications</h2>
+                <div class="skills-container">
+                    
+                    <div class="skill-category glass-card fade-in">
+                        <h3><i class="fas fa-database"></i> Data Analytics & Big Data</h3>
+                        <div class="badges">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>PySpark</span>
+                            <span>Excel</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Matplotlib</span>
+                            <span>Google Colab</span>
+                            <span>Kaggle</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in">
+                        <h3><i class="fas fa-laptop-code"></i> Software & Tools</h3>
+                        <div class="badges">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Flutter</span>
+                            <span>VS Code</span>
+                            <span>Networking Concepts</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in">
+                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Generative AI (GDC)</li>
+                            <li>Oracle Autonomous Database Cloud</li>
+                            <li>Developing Soft Skills and Personality</li>
+                            <li>Body Language: Key to Professional Success</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category glass-card fade-in">
+                        <h3><i class="fas fa-language"></i> Languages Known</h3>
+                        <div class="badges">
+                            <span>English</span>
+                            <span>Tamil</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="footer">
+        <div class="container fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            
+            <a href="mailto:priyadharshini01t@gmail.com" class="btn btn-primary contact-btn">Say Hello</a>
+
+            <div class="social-links">
+                <a href="mailto:priyadharshini01t@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Priya15t" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="copyright">© 2026 Priyadharshini T. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
