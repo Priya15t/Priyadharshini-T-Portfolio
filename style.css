@@ -327,7 +327,7 @@ a {
 }
 
 .name {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1rem;
