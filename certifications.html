@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Priyadharshini T</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .cert-card {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .cert-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .cert-card ul {
+            list-style: none;
+            padding: 0;
+            flex: 1;
+        }
+        .cert-card li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .cert-card li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+        .cert-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+        .cert-card a:hover {
+            color: var(--accent-color);
+        }
+        .cert-card i.fa-external-link-alt {
+            font-size: 0.75rem;
+            margin-left: 0.3rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PT<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section id="certifications" class="section">
+            <div class="container fade-in">
+                <h2 class="section-title" style="margin-bottom: 0.5rem;">Specializations & Certifications</h2>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">A comprehensive log of my professional development and continued education.</p>
+                
+                <div class="cert-grid">
+                    
+                    <!-- AWS Specialization -->
+                    <div class="cert-card glass-card">
+                        <h3><i class="fab fa-aws"></i> AWS Cloud</h3>
+                        <ul>
+                            <li><a href="assets/certs/AWS/AWS Cloud Technical Essentials.pdf" target="_blank">AWS Cloud Technical Essentials <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AWS/AWS Fundamentals.pdf" target="_blank">AWS Fundamentals <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AWS/AWS Certified Solutions Architect - Associate.pdf" target="_blank">AWS Certified Solutions Architect - Associate <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AWS/AWS Clould Solutions Architect.pdf" target="_blank">AWS Cloud Solutions Architect <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AWS/Architecting Solutions on AWS.pdf" target="_blank">Architecting Solutions on AWS <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AWS/Building Data Lakes on AWS.pdf" target="_blank">Building Data Lakes on AWS <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AWS/Migrating to the AWS Cloud.pdf" target="_blank">Migrating to the AWS Cloud <i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- AI Engineering Specialization -->
+                    <div class="cert-card glass-card">
+                        <h3><i class="fas fa-brain"></i> AI Engineering</h3>
+                        <ul>
+                            <li><a href="assets/certs/AI/AI Engineering.pdf" target="_blank">AI Engineering Specialization <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 1.pdf" target="_blank">AI Module 1 <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 2.pdf" target="_blank">AI Module 2 <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 3.pdf" target="_blank">AI Module 3 <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 4.pdf" target="_blank">AI Module 4 <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 5.pdf" target="_blank">AI Module 5 <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 6.pdf" target="_blank">AI Module 6 <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/AI/AI 7.pdf" target="_blank">AI Module 7 <i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Software Engineering -->
+                    <div class="cert-card glass-card">
+                        <h3><i class="fas fa-laptop-code"></i> Software Engineering</h3>
+                        <ul>
+                            <li><a href="assets/certs/Software/Software Engineering.pdf" target="_blank">Software Engineering <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Software/Software Design and Project Management.pdf" target="_blank">Software Design & Project Management <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Software/Modeling Software Systems using UML.pdf" target="_blank">Modeling Software Systems using UML <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Software/Implementation and Testing.pdf" target="_blank">Implementation and Testing <i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- International Business -->
+                    <div class="cert-card glass-card">
+                        <h3><i class="fas fa-globe"></i> International Business</h3>
+                        <ul>
+                            <li><a href="assets/certs/Business/International Business.pdf" target="_blank">International Business <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Business/International Business Context.pdf" target="_blank">International Business Context <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Business/International Business and Culture.pdf" target="_blank">International Business & Culture <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Business/International Business Operations.pdf" target="_blank">International Business Operations <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/Business/International Business Venturing Abroad.pdf" target="_blank">International Business Venturing Abroad <i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Miscellaneous -->
+                    <div class="cert-card glass-card">
+                        <h3><i class="fas fa-certificate"></i> Other Certifications</h3>
+                        <ul>
+                            <li><a href="assets/certs/DataScience.pdf" target="_blank">Data Science & AIML <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/SoftSkills.pdf" target="_blank">Developing Soft Skills and Personality <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/BodyLanguage.pdf" target="_blank">Body Language: Key to Professional Success <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="assets/certs/E-certificate.pdf" target="_blank">E-Certificate <i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="footer">
+        <div class="container fade-in">
+            <div class="social-links">
+                <a href="mailto:priyadharshini01t@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/priyadharshini-thandapani-19a523289" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Priya15t" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2026 Priyadharshini T. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
