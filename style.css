@@ -820,9 +820,4 @@ a {
 .cursor { animation: blink 1s infinite; font-weight: bold; color: var(--accent-color); }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-/* 3D Tilt utility */
-.tilt-card {
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-}
+
