@@ -797,3 +797,34 @@ a {
 .lightbox-close:hover {
     color: var(--accent-color);
 }
+
+/* Creative Additions: Custom Cursor */
+body { cursor: none; }
+a, button, input, textarea { cursor: none; }
+.custom-cursor {
+    width: 20px; height: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+.custom-cursor.hover {
+    transform: translate(-50%, -50%) scale(2);
+    background-color: var(--accent-color);
+    opacity: 0.5;
+}
+
+/* Typewriter Cursor */
+.cursor { animation: blink 1s infinite; font-weight: bold; color: var(--accent-color); }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* 3D Tilt utility */
+.tilt-card {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}

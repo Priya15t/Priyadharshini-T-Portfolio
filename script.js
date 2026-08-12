@@ -119,3 +119,60 @@ if (drawingImages.length > 0) {
         }
     });
 }
+
+// Custom Cursor
+const cursor = document.querySelector('.custom-cursor');
+if (cursor) {
+    document.addEventListener('mousemove', e => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+}
+
+// Typewriter Effect (only on home page)
+const typewriterEl = document.querySelector('.typewriter');
+if (typewriterEl) {
+    const words = ["Data Analyst", "Software Engineer", "Problem Solver"];
+    let wordIndex = 0; let charIndex = 0; let isDeleting = false;
+    function type() {
+        const currentWord = words[wordIndex];
+        if (isDeleting) {
+            typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+        }
+        
+        let typeSpeed = isDeleting ? 50 : 100;
+        if (!isDeleting && charIndex === currentWord.length) {
+            typeSpeed = 2000; isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false; wordIndex = (wordIndex + 1) % words.length; typeSpeed = 500;
+        }
+        setTimeout(type, typeSpeed);
+    }
+    type();
+}
+
+// Simple 3D Tilt for Glass Cards
+const tiltCards = document.querySelectorAll('.glass-card');
+tiltCards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const tiltX = (y - centerY) / 20;
+        const tiltY = (centerX - x) / 20;
+        card.style.transform = perspective(1000px) rotateX(\deg) rotateY(\deg) scale3d(1.02, 1.02, 1.02);
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1);
+    });
+});
