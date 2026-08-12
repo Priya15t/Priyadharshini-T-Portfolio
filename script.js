@@ -170,9 +170,9 @@ tiltCards.forEach(card => {
         const centerY = rect.height / 2;
         const tiltX = (y - centerY) / 20;
         const tiltY = (centerX - x) / 20;
-        card.style.transform = perspective(1000px) rotateX(\deg) rotateY(\deg) scale3d(1.02, 1.02, 1.02);
+        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`;
     });
     card.addEventListener('mouseleave', () => {
-        card.style.transform = perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1);
+        card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)`;
     });
 });
