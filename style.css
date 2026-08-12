@@ -799,8 +799,6 @@ a {
 }
 
 /* Creative Additions: Custom Cursor */
-body { cursor: none; }
-a, button, input, textarea { cursor: none; }
 .custom-cursor {
     width: 20px; height: 20px;
     border: 2px solid var(--accent-color);
