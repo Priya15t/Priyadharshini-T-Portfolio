@@ -316,6 +316,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     border-radius: 50%;
 }
 
@@ -371,6 +372,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     border-radius: calc(var(--border-radius) - 5px);
 }
 
