@@ -136,27 +136,17 @@ if (cursor) {
 // Typewriter Effect (only on home page)
 const typewriterEl = document.querySelector('.typewriter');
 if (typewriterEl) {
-    const words = ["Data Analyst", "Software Engineer", "Problem Solver"];
-    let wordIndex = 0; let charIndex = 0; let isDeleting = false;
+    const word = "Data Analyst";
+    let charIndex = 0;
     function type() {
-        const currentWord = words[wordIndex];
-        if (isDeleting) {
-            typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
-            charIndex++;
-        }
+        typewriterEl.textContent = word.substring(0, charIndex + 1);
+        charIndex++;
         
-        let typeSpeed = isDeleting ? 50 : 100;
-        if (!isDeleting && charIndex === currentWord.length) {
-            typeSpeed = 2000; isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false; wordIndex = (wordIndex + 1) % words.length; typeSpeed = 500;
+        if (charIndex < word.length) {
+            setTimeout(type, 100);
         }
-        setTimeout(type, typeSpeed);
     }
-    type();
+    setTimeout(type, 500); // slight delay before starting
 }
 
 // Simple 3D Tilt for Glass Cards
